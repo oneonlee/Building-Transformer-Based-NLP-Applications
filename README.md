@@ -3,7 +3,7 @@
 <div align="center">
   <img width=50% alt="DLI_Header" src="images/DLI_Header.png">
 
-[NVIDIA DLI](https://www.nvidia.com/ko-kr/training/)의 "[Building Transformer-Based NLP Applications (Transformer 기반 자연어 처리 애플리케이션 구축)](https://www.nvidia.com/ko-kr/training/instructor-led-workshops/natural-language-processing/)" 워크숍 레포지토리
+[NVIDIA DLI](https://www.nvidia.com/ko-kr/training/)의 "[Building Transformer-Based Natural Language Processing Applications (Transformer 기반 자연어 처리 애플리케이션 구축)](https://www.nvidia.com/ko-kr/training/instructor-led-workshops/natural-language-processing/)" 워크숍 레포지토리
 
 </div>
 
