@@ -10,11 +10,12 @@
 ## 개발 환경
 
 - [NVIDIA NGC](https://www.nvidia.com/ko-kr/gpu-cloud/)
-- [JupyterLab](/00_jupyterlab.ipynb)
+- [NVIDIA NeMo](https://developer.nvidia.com/nvidia-nemo)
+- JupyterLab
 
 # 목차
 ## 1부: Machine Learning in NLP
-### 1. [트랜스포머 아키텍처](010_Transformer-NLP.ipynb)<br>
+### 1. [트랜스포머 아키텍처](010_Transformer.ipynb)<br>
 - 트랜스포머 아키텍처
 - 어텐션
 - 인코더 피쳐
@@ -58,6 +59,28 @@ NVIDIE Nemo를 활용하여 도메인별 명명된 엔티티 인식기(NER, name
 
 ## 3부: Production Deployment (프로덕션 배포)
 
+사용 전, [`bert_qa.pt` data를 클릭하여 다운](https://www.dropbox.com/s/g9ymmvc73mp0r4s/bert_qa.pt?dl=0) 받아 `data` 폴더 안에 넣어주세요.
+
+
+### 1. [모델 내보내기](010_ExportingTheModel.ipynb)<br/>
+다음과 같은 내용을 배웁니다.
+- PyTorch에서 트레이닝된 모델을 서버 효율적인 형식으로 변환<br/>
+- 감소된 정밀도 및 TensorRT 모델 최적화 적용 <br/>
+### 2. [모델 호스팅](020_HostingTheModel.ipynb)<br/>
+다음과 같은 내용을 배웁니다.
+- NVIDIA Triton Inference Server를 사용하여 프로덕션에 모델 배포<br/>
+- 모델 구성을 통해 NVIDIA Triton의 일부 기본 기능 제어 <br/>
+- 내보내기 형식 및 구성 옵션이 성능 및 비용에 미치는 영향 평가<br/>
+### 3. [서버 성능](030_ServerPerformance.ipynb)<br/>
+다음과 같은 내용을 배웁니다.
+- 다양한 Triton 구성 옵션이 서빙 성능에 미치는 영향 평가<br/>
+- 프로덕션의 추론 성능 모니터링 <br/>
+### 4. [모델 사용](040_UsingTheModel.ipynb)<br/>
+다음과 같은 내용을 배웁니다.
+- Triton에서 노출되는 API를 활용할 수 있는 단순한 애플리케이션 구축<br/>
+- 더 복잡한 애플리케이션 및 모델 파이프라인 배포를 위한 옵션 논의<br/>
+
+<!--
 ---
 
 # Certificates
@@ -68,3 +91,4 @@ NVIDIE Nemo를 활용하여 도메인별 명명된 엔티티 인식기(NER, name
 <img width=75% alt="Certificates" src="/images/Certificate.jpg"></a>
 
 </div>
+-->
