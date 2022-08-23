@@ -80,15 +80,13 @@ NVIDIE Nemo를 활용하여 도메인별 명명된 엔티티 인식기(NER, name
 - Triton에서 노출되는 API를 활용할 수 있는 단순한 애플리케이션 구축<br/>
 - 더 복잡한 애플리케이션 및 모델 파이프라인 배포를 위한 옵션 논의<br/>
 
-<!--
 ---
 
 # Certificates
 
 <div align="center">
 
-<a href="" target="_blank">
+<a href="https://courses.nvidia.com/certificates/3635de0b089446bb8e95c101b05518e4/" target="_blank">
 <img width=75% alt="Certificates" src="/images/Certificate.jpg"></a>
 
 </div>
--->
