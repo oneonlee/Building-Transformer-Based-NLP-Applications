@@ -1,0 +1,50 @@
+name: "bertQA-onnx-trt-fp16"
+platform: "onnxruntime_onnx"
+max_batch_size: 8
+input [
+{
+    name: "input__0"
+    data_type: TYPE_INT64
+    dims: [384]
+},
+{
+    name: "input__1"
+    data_type: TYPE_INT64
+    dims: [384]
+},
+{
+    name: "input__2"
+    data_type: TYPE_INT64
+    dims: [384]
+}
+]
+output [
+{
+    name: "output__0"
+    data_type: TYPE_FP32
+    dims: [384]
+}, 
+{
+    name: "output__1"
+    data_type: TYPE_FP32
+    dims: [384]
+}
+]
+optimization {
+    execution_accelerators {
+      gpu_execution_accelerator : [ {
+         name : "tensorrt"
+         parameters { key: "precision_mode" value: "FP16" }
+      }]
+   }
+  cuda {
+    graphs: 0
+  }
+}
+instance_group [
+    {
+        count: 1
+        kind: KIND_GPU
+        gpus: [ 0 ]
+    }
+]
